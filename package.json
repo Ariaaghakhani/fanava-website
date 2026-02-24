@@ -1,0 +1,28 @@
+{
+  "name": "fan-ava-pouyan",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/eslint": "^1.15.2",
+    "@nuxt/image": "^2.0.0",
+    "@pinia/nuxt": "^0.11.3",
+    "@tailwindcss/vite": "^4.2.1",
+    "nuxt": "^4.3.1",
+    "tailwindcss": "^4.2.1",
+    "vue": "^3.5.28",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@vite-pwa/nuxt": "^1.0.7",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.5.1",
+    "prettier": "^3.6.2"
+  }
+}

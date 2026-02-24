@@ -93,10 +93,6 @@ export default defineNuxtPlugin((nuxtApp) => {
   const defaultInstance = $fetch.create({
     baseURL: runtimeConfig.public.BACKEND_URL,
     onRequest({ request, options }) {
-      // Set headers directly in options
-      const headers = {
-        'ngrok-skip-browser-warning': '69420',
-      }
 
       // Add token on client side
       // if (import.meta.client && cachedToken?.value) {
@@ -118,7 +114,7 @@ export default defineNuxtPlugin((nuxtApp) => {
       if (import.meta.server) {
         options.headers = {
           ...options.headers,
-          'Strapi-Response-Format': 'v4',
+          'Strapi-Response-Format': 'v5',
         }
       }
     },

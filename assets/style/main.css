@@ -1,0 +1,71 @@
+@import "tailwindcss";
+@import "./fonts.css";
+
+/* Utility font */
+@layer utilities {
+    .font-dana {
+        font-family: 'Dana', sans-serif;
+    }
+}
+
+@theme static {
+    /* ---- Brand (primary, with shades) ---- */
+    --color-brand-50: #e7f7f7;
+    --color-brand-100: #c3ebeb;
+    --color-brand-200: #9edede;
+    --color-brand-300: #79d2d2;
+    --color-brand-400: #5cbcbc;
+    --color-brand-500: #2c7a7b;
+    --color-brand-600: #256b6b;
+    --color-brand-700: #1f5c5c;
+    --color-brand-800: #194d4d;
+    --color-brand-900: #133e3e;
+
+    /* ---- Single-tone colors (no shades) ---- */
+    --color-secondary: #6b7280;
+    --color-info: #3b82f6;
+    --color-warning: #f59e0b;
+    --color-danger: #ef4444;
+    --color-success: #22c55e; /* Green for success */
+
+    /* ---- Neutral palette (for backgrounds & text) ---- */
+    --color-neutral-50: #fafafa;
+    --color-neutral-100: #f5f5f5;
+    --color-neutral-200: #e5e5e5;
+    --color-neutral-300: #d4d4d4;
+    --color-neutral-400: #a3a3a3;
+    --color-neutral-500: #737373;
+    --color-neutral-600: #525252;
+    --color-neutral-700: #404040;
+    --color-neutral-800: #262626;
+    --color-neutral-900: #171717;
+}
+
+@theme dark {
+    --color-secondary: #9ca3af;
+    --color-info: #60a5fa;
+    --color-warning: #fcd34d;
+    --color-danger: #fca5a5;
+    --color-success: #4ade80; /* Lighter green for dark mode */
+}
+
+button{
+    cursor: pointer;
+}
+input, textarea, select {
+  font-size: 16px;
+}
+
+
+[dir='rtl'] .nuxt-loading-indicator {
+  transform-origin: right !important;
+}
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}

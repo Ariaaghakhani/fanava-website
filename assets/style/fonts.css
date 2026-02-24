@@ -1,0 +1,56 @@
+/* fonts.css */
+@font-face {
+    font-family: 'Dana';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url('../fonts/Dana-Thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Dana';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/Dana-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Dana';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('../fonts/Dana-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Dana';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('../fonts/Dana-DemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Dana';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/Dana-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Dana';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('../fonts/Dana-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Dana';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('../fonts/Dana-Black.ttf') format('truetype');
+}

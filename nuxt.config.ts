@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@vite-pwa/nuxt',
   ],
-  css:['~/assets/style/main.css'],
+  css:['~/assets/style/main.css'], 
   vite:{
     plugins:[
       tailwindcss() as any

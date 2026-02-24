@@ -9,17 +9,17 @@
 }
 
 @theme static {
-    /* ---- Brand (primary, with shades) ---- */
-    --color-brand-50: #e7f7f7;
-    --color-brand-100: #c3ebeb;
-    --color-brand-200: #9edede;
-    --color-brand-300: #79d2d2;
-    --color-brand-400: #5cbcbc;
-    --color-brand-500: #2c7a7b;
-    --color-brand-600: #256b6b;
-    --color-brand-700: #1f5c5c;
-    --color-brand-800: #194d4d;
-    --color-brand-900: #133e3e;
+    /* ---- Primary (with shades) ---- */
+    --color-primary-50: #e7f7f7;
+    --color-primary-100: #c3ebeb;
+    --color-primary-200: #9edede;
+    --color-primary-300: #79d2d2;
+    --color-primary-400: #5cbcbc;
+    --color-primary-500: #2c7a7b;
+    --color-primary-600: #256b6b;
+    --color-primary-700: #1f5c5c;
+    --color-primary-800: #194d4d;
+    --color-primary-900: #133e3e;
 
     /* ---- Single-tone colors (no shades) ---- */
     --color-secondary: #6b7280;

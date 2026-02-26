@@ -70,12 +70,10 @@ input, textarea, select {
   filter: blur(1rem);
 }
 
-.locale-enter-active,
-.locale-leave-active {
+.locale-transition-wrapper {
   transition: opacity 0.3s ease, filter 0.3s ease;
 }
-.locale-enter-from,
-.locale-leave-to {
+.locale-transitioning {
   opacity: 0;
   filter: blur(0.5rem);
 }

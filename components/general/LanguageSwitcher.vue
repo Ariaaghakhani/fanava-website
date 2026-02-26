@@ -8,12 +8,12 @@ const availableLocales = computed(() =>
 </script>
 
 <template>
-  <button
+  <UButton
     v-for="lang in availableLocales"
     :key="lang.code"
     class="bg-amber-300 px-4 py-2 rounded"
     @click="switchLocale(setLocale, lang.code)"
   >
     {{ lang.name }}
-  </button>
+  </UButton>
 </template>

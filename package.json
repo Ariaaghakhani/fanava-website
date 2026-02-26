@@ -7,11 +7,13 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "clean": "nuxi cleanup"
   },
   "dependencies": {
     "@nuxt/eslint": "^1.15.2",
     "@nuxt/image": "^2.0.0",
+    "@nuxt/ui": "^4.5.0",
     "@nuxtjs/i18n": "^10.2.3",
     "@pinia/nuxt": "^0.11.3",
     "@tailwindcss/vite": "^4.2.1",

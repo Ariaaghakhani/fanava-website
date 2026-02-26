@@ -69,3 +69,13 @@ input, textarea, select {
   opacity: 0;
   filter: blur(1rem);
 }
+
+.locale-enter-active,
+.locale-leave-active {
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+.locale-enter-from,
+.locale-leave-to {
+  opacity: 0;
+  filter: blur(0.5rem);
+}

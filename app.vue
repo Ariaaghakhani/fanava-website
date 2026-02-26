@@ -1,16 +1,20 @@
 <template>
   <div>
-    <NuxtLayout>
-      <Transition name="fade" mode="out-in">
-        <NuxtPage />
-      </Transition>
-    </NuxtLayout>
-    {{ localeProperties.code }}
+    <Transition name="locale" mode="out-in">
+      <div :key="locale">
+        <NuxtLayout>
+          <Transition name="fade" mode="out-in">
+            <NuxtPage />
+          </Transition>
+        </NuxtLayout>
+        {{ localeProperties.code }}
+      </div>
+    </Transition>
   </div>
 </template>
 
 <script setup>
-const { localeProperties } = useI18n()
+const { locale, localeProperties } = useI18n()
 useHead(
   computed(() => ({
     htmlAttrs: {

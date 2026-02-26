@@ -1,10 +1,12 @@
 <template>
-  <div class="container">
+  <div>
     <TheHeader />
-    <main class="min-h-screen">
-      <LanguageSwitcher />
-      <slot />
-    </main>
+    <UContainer class="py-4">
+      <main class="min-h-screen">
+        <LanguageSwitcher />
+        <slot />
+      </main>
+    </UContainer>
     <TheFooter />
   </div>
 </template>

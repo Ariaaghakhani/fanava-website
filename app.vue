@@ -1,10 +1,24 @@
 <template>
   <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
+    <NuxtLayout>
+      <Transition name="fade" mode="out-in">
+        <NuxtPage />
+      </Transition>
+    </NuxtLayout>
+    {{ localeProperties.code }}
   </div>
 </template>
+
 <script setup>
-const nuxtApp = useNuxtApp()
-console.log(nuxtApp.$api);
+const { localeProperties } = useI18n()
+useHead(
+  computed(() => ({
+    htmlAttrs: {
+      dir: localeProperties.value.dir,
+      lang: localeProperties.value.language,
+    },
+  }))
+)
 </script>
+
+<style></style>
